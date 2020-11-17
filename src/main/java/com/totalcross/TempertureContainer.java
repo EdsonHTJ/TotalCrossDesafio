@@ -40,10 +40,6 @@ public class TempertureContainer extends Container{
 
         setBorderStyle(BORDER_ROUNDED);
 
-        AUTO.setFont(AUTO.getFont().adjustedBy(-5));
-        HOT.setFont(AUTO.getFont().adjustedBy(-5));
-        COLD.setFont(AUTO.getFont().adjustedBy(-5));
-        POWER.setFont(AUTO.getFont().adjustedBy(-5));
 
         AUTO.setForeColor(Color.getRGB(10, 180, 10));
         HOT.setForeColor(Color.getRGB(100, 100, 100));
@@ -89,17 +85,17 @@ public class TempertureContainer extends Container{
 
 
 
-        add(AUTO,CENTER-AUTO.getFont().size*7/2-AUTO.getFont().size/2,BOTTOM-25);
-        add(AutoButton,SAME,SAME,AUTO.getWidth(),AUTO.getHeight());
+        add(AUTO,75,BOTTOM-25);
+        add(AutoButton,SAME,SAME,SAME,SAME);
 
-        add(HOT,AFTER+AUTO.getWidth(),BOTTOM-30);
-        add(HotButton,SAME,SAME,HOT.getWidth(),HOT.getHeight());
+        add(HOT,AFTER+25,BOTTOM-30);
+        add(HotButton,SAME,SAME,SAME,SAME);
 
-        add(COLD,AFTER+AUTO.getWidth(),BOTTOM-30);
-        add(ColdButton,SAME,SAME,COLD.getWidth(),COLD.getHeight());
+        add(COLD,AFTER+25,BOTTOM-30);
+        add(ColdButton,SAME,SAME,SAME,SAME);
 
-        add(POWER,AFTER+AUTO.getWidth(),BOTTOM-30);
-        add(PowerButton,SAME,SAME,POWER.getWidth(),POWER.getHeight());
+        add(POWER,AFTER+25,BOTTOM-30);
+        add(PowerButton,SAME,SAME,SAME,SAME);
 
         add(new Label("Andar de cima"),CENTER,BOTTOM);
      }

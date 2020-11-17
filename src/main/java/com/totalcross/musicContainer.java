@@ -33,9 +33,11 @@ public class musicContainer extends Container{
     @Override
     public void initUI(){
         try{
-            Image albumCoverImage = new Image("/utils/easyRider.jpg");
+            Image albumCoverImage = new Image("utils/easyRider.jpg");
 
             AlbumCover = new ImageControl(albumCoverImage.scaledBy(0.5,0.5));
+
+            add(AlbumCover,RIGHT,CENTER,PREFERRED-2,height-5);
         }catch(Exception e){
             
         }
@@ -52,7 +54,7 @@ public class musicContainer extends Container{
 
         setBorderStyle(BORDER_ROUNDED);
         setBackColor(Color.getRGB(251,194,4));
-        add(AlbumCover,RIGHT,CENTER,PREFERRED-2,height-5);
+        
         add(CAST,LEFT+5,TOP+5);
         add(new Label("I Wasn't Born To Follow "),SAME,AFTER+10);
         add(new Label("The Birds "),SAME,AFTER+10);

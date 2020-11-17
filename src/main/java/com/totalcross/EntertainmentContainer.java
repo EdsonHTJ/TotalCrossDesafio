@@ -30,18 +30,19 @@ public class EntertainmentContainer extends Container{
         add(name,LEFT+10,TOP+5);
 
         try{
-            Harmony = new ImageControl((new Image("./utils/Harmony.png").scaledBy(0.1, 0.1)));
+            Harmony = new ImageControl((new Image("utils/Harmony.png").scaledBy(0.1, 0.1)));
+            add(new Container(){
+                public void initUI(){
+                    add(Harmony,LEFT+5,CENTER);
+                    add(new Label("Harmony"),AFTER+10,CENTER);
+                    add(new Label("YouTube"),RIGHT-20,CENTER);
+    
+                }
+            },SAME,AFTER+20,FILL,40);
         }catch(Exception e){
         
         }
-        add(new Container(){
-            public void initUI(){
-                add(Harmony,LEFT+5,CENTER);
-                add(new Label("Harmony"),AFTER+10,CENTER);
-                add(new Label("YouTube"),RIGHT-20,CENTER);
-
-            }
-        },SAME,AFTER+20,FILL,40);
+        
 
         add(new Container(){
             public void initUI(){

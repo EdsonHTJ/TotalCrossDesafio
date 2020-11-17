@@ -20,7 +20,7 @@ import com.totalcross.LightsAndDoorsController.LightsContainer;
 
 public class MyFirstApp extends MainWindow {
 
-    SideMenuContainer Sidemenu;
+   // SideMenuContainer Sidemenu;
     
 
     public MyFirstApp() {
@@ -72,13 +72,13 @@ public class MyFirstApp extends MainWindow {
         sc.add(lightsContainer,2,4,400,250);
         sc.add(doorbellContainer,SAME,AFTER+4,400,250);
 
-     
-        sc.add(tp,AFTER+4,TOP+4,400,250);
-
+        
+        sc.add(tp,AFTER+4,TOP+4,400,275);
+        
         sc.add(Ec,tp.getX(),tp.getY2()+4,400,500);
 
         sc.add(houseContainer,AFTER+4,TOP+4,500,600);
-
+        
         sc.add(Mc,SAME,houseContainer.getY2()+4,500,200);
 
         sc.add(Tcs,AFTER+4,TOP+4,400,200);
@@ -86,6 +86,7 @@ public class MyFirstApp extends MainWindow {
         sc.add(Ic,SAME,AFTER+4,400,250);
 
         sc.add(SecurityC,SAME,AFTER+4,400,200);
+        
         }
     };});
     SideMenuContainer.Item Map = new SideMenuContainer.Item("Map", MaterialIcons._MAP, Color.BLACK, ()->{return new Container(){
@@ -95,15 +96,16 @@ public class MyFirstApp extends MainWindow {
             ScrollContainer sc = new ScrollContainer(true,true);
             add(sc,LEFT,TOP,FILL,FILL);
             try{
-                mapControl = new ImageControl( (new Image("./utils/map.png")));
+                mapControl = new ImageControl( (new Image("utils/map.png")));
+                sc.add(mapControl,LEFT,TOP);
             }catch(Exception e){
-
+                
             }
-            sc.add(mapControl,LEFT,TOP);
+            
         }
 
     };});
-    Sidemenu =new SideMenuContainer("Home Assistant", Home,Map);
+    SideMenuContainer Sidemenu =new SideMenuContainer("Home Assistant", Home,Map);
     Sidemenu.setBackColor(Color.getRGB(100, 100, 255));
     Sidemenu.setForeColor(Color.WHITE);
     Sidemenu.setItemForeColor(Color.BLACK);

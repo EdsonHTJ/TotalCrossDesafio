@@ -27,7 +27,7 @@ public class SecurityContainer extends Container{
         Arm_Home.setForeColor(Color.getRGB(20,20,200));
 
         SecureIcon.setForeColor(Color.getRGB(20,150,20));
-        SecureIcon.setFont(SecureIcon.getFont().adjustedBy(10));
+        
         add(lSecurity,LEFT+10,TOP+5);
         add(SecureIcon,RIGHT-10,TOP+5);
         setBorderStyle(BORDER_ROUNDED);

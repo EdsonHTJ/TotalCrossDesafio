@@ -2,7 +2,6 @@ package com.totalcross;
 
 
 
-import java.util.concurrent.ExecutionException;
 
 import totalcross.ui.Button;
 import totalcross.ui.Container;
@@ -357,8 +356,8 @@ public class LightsAndDoorsController{
 
             try{
               
-                HouseImage = new ImageControl(new Image("./utils/house.png"));
-                Image DoorImg = new Image("./utils/door.png");
+                HouseImage = new ImageControl(new Image("utils/house.png"));
+                Image DoorImg = new Image("utils/door.png");
                 
                 DOOR1 = new ImageControl(DoorImg);
                 DOOR1.transparentBackground=true;
@@ -369,27 +368,29 @@ public class LightsAndDoorsController{
                 DOOR3 = new ImageControl(DoorImg);
                 DOOR3.transparentBackground=true;
 
+                add(HouseImage,LEFT,TOP,FILL,FILL);
+                add(Camera1,LEFT,TOP+80);
+                add(CameraButton1,SAME,SAME,SAME,SAME);
+                add(Camera2,RIGHT-10,TOP+80);
+                add(CameraButton2,SAME,SAME,SAME,SAME);
+                add(Camera3,RIGHT-10,TOP+450);
+                add(CameraButton3,SAME,SAME,SAME,SAME);
+                add(Camera4,LEFT,TOP+500);
+                add(CameraButton4,SAME,SAME,SAME,SAME);
+                add(kitchenIcon,LEFT+50,TOP+200);
+                add(livingIcon,LEFT+240,TOP+200);
+                add(porchIcon,LEFT+100,TOP+500);
+                add(garageIcon,RIGHT-100,TOP+370);
+                add(DOOR1,LEFT+50,TOP+80);
+                add(DOOR2,RIGHT-200,TOP+350);
+                add(DOOR3,LEFT+130,TOP+500);
+
              
 
             }catch (Exception e){
 
             }
-            add(HouseImage,LEFT,TOP,FILL,FILL);
-            add(Camera1,LEFT,TOP+80);
-            add(CameraButton1,SAME,SAME,SAME,SAME);
-            add(Camera2,RIGHT-10,TOP+80);
-            add(CameraButton2,SAME,SAME,SAME,SAME);
-            add(Camera3,RIGHT-10,TOP+450);
-            add(CameraButton3,SAME,SAME,SAME,SAME);
-            add(Camera4,LEFT,TOP+500);
-            add(CameraButton4,SAME,SAME,SAME,SAME);
-            add(kitchenIcon,LEFT+50,TOP+200);
-            add(livingIcon,LEFT+240,TOP+200);
-            add(porchIcon,LEFT+100,TOP+500);
-            add(garageIcon,RIGHT-100,TOP+370);
-            add(DOOR1,LEFT+50,TOP+80);
-            add(DOOR2,RIGHT-200,TOP+350);
-            add(DOOR3,LEFT+130,TOP+500);
+            
 
 
 
@@ -408,11 +409,9 @@ public class LightsAndDoorsController{
                             setBorderStyle(BORDER_ROUNDED);
                             ImageControl imageControl;
                             try{
-                                imageControl = new ImageControl(new Image("./utils/patio.jpg"));
+                                imageControl = new ImageControl(new Image("utils/patio.jpg"));
                                 add(imageControl,LEFT,TOP,FILL,FILL);
 
-                                pwindow.x = 600;
-                                pwindow.y = 500;
                             }catch(Exception exe){
         
                             }
@@ -435,7 +434,7 @@ public class LightsAndDoorsController{
                             setBorderStyle(BORDER_ROUNDED);
                             ImageControl imageControl;
                             try{
-                                imageControl = new ImageControl(new Image("./utils/backyard.jpg"));
+                                imageControl = new ImageControl(new Image("utils/backyard.jpg"));
                                 add(imageControl,LEFT,TOP,FILL,FILL);
 
                                 
@@ -462,8 +461,7 @@ public class LightsAndDoorsController{
         Container container = new Container();
         Button Close =  new Button("");
         Icon CloseIcon =  new Icon(MaterialIcons._CLEAR);
-        int x;
-        int y;
+
         @Override
         protected void onPopup() {
             setBorderStyle(BORDER_SIMPLE);
@@ -478,8 +476,8 @@ public class LightsAndDoorsController{
                     add(Close,LEFT,TOP,40,FILL);
                     add(name,AFTER+30,CENTER);
                 }
-            },CENTER,CENTER-200,container.getWidth(),50);
-            add(container,CENTER,AFTER,container.getWidth(),PREFERRED);
+            },CENTER,CENTER-200,400,50);
+            add(container,CENTER,AFTER,400,300);
             Close.addPressListener(e -> {
                 unpop();
             });;

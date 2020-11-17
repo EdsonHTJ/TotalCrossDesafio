@@ -2,7 +2,7 @@
 <project name="maven-antrun-" default="main"  >
 <target name="main">
   <exec failonerror="true" executable="/home/edson/.local/share/TotalCross/zulu_jdk_11/bin/java">
-    <arg value="-Dretrolambda.classpathFile=/tmp/retrolambda3126180945138174792classpath"/>
+    <arg value="-Dretrolambda.classpathFile=/tmp/retrolambda1120805638475169473classpath"/>
     <arg value="-Dretrolambda.bytecodeVersion=51"/>
     <arg value="-Dretrolambda.defaultMethods=false"/>
     <arg value="-Dretrolambda.quiet=false"/>

@@ -21,7 +21,7 @@ public class temperstureStudyContainer extends Container{
         tempLabel.setFont(tempLabel.getFont().adjustedBy(10));
         add(tempLabel,LEFT+5,AFTER+10);
         try{
-            Image Thermometer =  new Image("/utils/thermometerIcon.png");
+            Image Thermometer =  new Image("utils/thermometerIcon.png");
             Thermometer.applyColor(Color.getRGB(20,20,150));
             Thermometer.applyColor2(Color.getRGB(20,20,150));
            // Thermometer.changeColors(Color.BLACK, Color.getRGB(20,20,150));
@@ -30,15 +30,17 @@ public class temperstureStudyContainer extends Container{
             TControl  = new ImageControl(Thermometer.scaledBy(0.2, 0.15));
             
 
-            THistoryControl=  new ImageControl( new Image("./utils/tHistory.png"));
+            THistoryControl=  new ImageControl( new Image("utils/tHistory.png"));
+
+            add(TControl,RIGHT-5,TOP+10); 
+            add(THistoryControl,LEFT,BOTTOM,PARENTSIZE,PREFERRED);  
+            ContainerButton.setBorder(BORDER_NONE);
+            ContainerButton.transparentBackground=true; 
+            add(ContainerButton,LEFT,TOP,FILL,FILL);  
         }catch(Exception e){
         
         }
-        add(TControl,RIGHT-5,TOP+10); 
-        add(THistoryControl,LEFT,BOTTOM,PARENTSIZE,PREFERRED);  
-        ContainerButton.setBorder(BORDER_NONE);
-        ContainerButton.transparentBackground=true; 
-        add(ContainerButton,LEFT,TOP,FILL,FILL);      
+            
     }
     
 }
