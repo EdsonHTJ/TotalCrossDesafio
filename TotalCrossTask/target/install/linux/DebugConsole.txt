@@ -1,0 +1,426 @@
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.MyFirstApp lambda$0(com.totalcross.MyFirstApp,). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.MyFirstApp$$Lambda$1.getView 0
+totalcross.ui.SideMenuContainer.swap 159
+totalcross.ui.SideMenuContainer.initUI 138
+totalcross.ui.Control.setRect 1383
+totalcross.ui.Container.add 229
+com.totalcross.MyFirstApp.initUI 113
+totalcross.ui.MainWindow.startProgram 501
+totalcross.ui.MainWindow._onTimerTick 541
+
+Aborting program.
+===============
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.MyFirstApp lambda$0(com.totalcross.MyFirstApp,). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.MyFirstApp$$Lambda$1.getView 0
+totalcross.ui.SideMenuContainer.swap 159
+totalcross.ui.SideMenuContainer.initUI 138
+totalcross.ui.Control.setRect 1383
+totalcross.ui.Container.add 229
+com.totalcross.MyFirstApp.initUI 113
+totalcross.ui.MainWindow.startProgram 501
+totalcross.ui.MainWindow._onTimerTick 541
+
+Aborting program.
+===============
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.MyFirstApp lambda$0(com.totalcross.MyFirstApp,). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.MyFirstApp$$Lambda$1.getView 0
+totalcross.ui.SideMenuContainer.swap 159
+totalcross.ui.SideMenuContainer.initUI 138
+totalcross.ui.Control.setRect 1383
+totalcross.ui.Container.add 229
+com.totalcross.MyFirstApp.initUI 113
+totalcross.ui.MainWindow.startProgram 501
+totalcross.ui.MainWindow._onTimerTick 541
+
+Aborting program.
+===============
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.TempertureContainer$1 lambda$onPopup$0(com.totalcross.TempertureContainer$1,totalcross.ui.event.ControlEvent,). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.TempertureContainer$1$$Lambda$1.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners 2471
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.MainWindow._onTimerTick 575
+totalcross.ui.Window.pumpEvents
+totalcross.ui.Window.popup 1405
+totalcross.ui.Window.popup 1789
+com.totalcross.TempertureContainer._onEvent 337
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners
+tota
+Aborting program.
+===============
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.TempertureContainer$1 lambda$onPopup$0(com.totalcross.TempertureContainer$1,totalcross.ui.event.ControlEvent,). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.TempertureContainer$1$$Lambda$1.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners 2471
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.MainWindow._onTimerTick 575
+totalcross.ui.Window.pumpEvents
+totalcross.ui.Window.popup 1405
+totalcross.ui.Window.popup 1789
+com.totalcross.TempertureContainer._onEvent 337
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners
+tota
+Aborting program.
+===============
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.TempertureContainer$1$2 lambda$initUI$0(com.totalcross.TempertureContainer$1$2,totalcross.ui.event.ControlEvent,). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.TempertureContainer$1$2$$Lambda$1.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners 2471
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.MainWindow._onTimerTick 575
+totalcross.ui.Window.pumpEvents
+totalcross.ui.Window.popup 1405
+totalcross.ui.Window.popup 1789
+com.totalcross.TempertureContainer._onEvent 337
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners
+to
+Aborting program.
+===============
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.TempertureContainer$1$2 lambda$initUI$3(com.totalcross.TempertureContainer$1$2,totalcross.ui.event.ControlEvent,). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.TempertureContainer$1$2$$Lambda$4.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners 2471
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.MainWindow._onTimerTick 575
+totalcross.ui.Window.pumpEvents
+totalcross.ui.Window.popup 1405
+totalcross.ui.Window.popup 1789
+com.totalcross.TempertureContainer._onEvent 337
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners
+to
+Aborting program.
+===============
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.TempertureContainer$1$2$$Lambda$1 lambdaFactory$(). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.TempertureContainer$1$2.initUI 299
+totalcross.ui.Control.setRect 1383
+totalcross.ui.Container.add 229
+com.totalcross.TempertureContainer$1.onPopup 263
+totalcross.ui.Window.popupNonBlocking 1367
+totalcross.ui.Window.popup 1401
+totalcross.ui.Window.popup 1789
+com.totalcross.TempertureContainer._onEvent 337
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners 2471
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.MainWindow._onTimerTick 575
+
+Aborting program.
+===============
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.TempertureContainer$1 lambda$onPopup$0(com.totalcross.TempertureContainer$1,totalcross.ui.event.ControlEvent,). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.TempertureContainer$1$$Lambda$1.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners 2471
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.MainWindow._onTimerTick 575
+totalcross.ui.Window.pumpEvents
+totalcross.ui.Window.popup 1405
+totalcross.ui.Window.popup 1789
+com.totalcross.TempertureContainer._onEvent 337
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners
+tota
+Aborting program.
+===============
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.TempertureContainer$1 lambda$onPopup$0(com.totalcross.TempertureContainer$1,totalcross.ui.event.ControlEvent,). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.TempertureContainer$1$$Lambda$1.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners 2471
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.MainWindow._onTimerTick 575
+totalcross.ui.Window.pumpEvents
+totalcross.ui.Window.popup 1405
+totalcross.ui.Window.popup 1789
+com.totalcross.TempertureContainer._onEvent 337
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners
+tota
+Aborting program.
+===============
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.TempertureContainer$1 lambda$onPopup$0(com.totalcross.TempertureContainer$1,totalcross.ui.event.ControlEvent,). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.TempertureContainer$1$$Lambda$1.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners 2471
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.MainWindow._onTimerTick 575
+totalcross.ui.Window.pumpEvents
+totalcross.ui.Window.popup 1405
+totalcross.ui.Window.popup 1789
+com.totalcross.TempertureContainer._onEvent 337
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners
+tota
+Aborting program.
+===============
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.TempertureContainer$1 lambda$onPopup$0(com.totalcross.TempertureContainer$1,totalcross.ui.event.ControlEvent,). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.TempertureContainer$1$$Lambda$1.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners 2471
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.MainWindow._onTimerTick 575
+totalcross.ui.Window.pumpEvents
+totalcross.ui.Window.popup 1405
+totalcross.ui.Window.popup 1789
+com.totalcross.TempertureContainer.lambda$0 275
+com.totalcross.TempertureContainer$$Lambda$1.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent
+total
+Aborting program.
+===============
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.TempertureContainer$1 lambda$onPopup$0(com.totalcross.TempertureContainer$1,totalcross.ui.event.ControlEvent,). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.TempertureContainer$1$$Lambda$1.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners 2471
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.MainWindow._onTimerTick 575
+totalcross.ui.Window.pumpEvents
+totalcross.ui.Window.popup 1405
+totalcross.ui.Window.popup 1789
+com.totalcross.TempertureContainer.lambda$0 275
+com.totalcross.TempertureContainer$$Lambda$1.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent
+total
+Aborting program.
+===============
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.TempertureContainer$1 lambda$onPopup$0(com.totalcross.TempertureContainer$1,totalcross.ui.event.ControlEvent,). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.TempertureContainer$1$$Lambda$1.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.penDown 136
+totalcross.ui.Control.callEventListeners 2401
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Window._postEvent 1135
+totalcross.ui.Window._postEvent 641
+totalcross.ui.Window.pumpEvents
+totalcross.ui.Window.popup 1405
+totalcross.ui.Window.popup 1789
+com.totalcross.TempertureContainer.lambda$0 276
+com.totalcross.TempertureContainer$$Lambda$1.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.M
+Aborting program.
+===============
+Unhandled exception:
+java.lang.NoSuchMethodError:
+ com.totalcross.TempertureContainer$1 lambda$onPopup$0(com.totalcross.TempertureContainer$1,totalcross.ui.event.ControlEvent,). The current VM may not be compatible with this program OR there may be a bug in the Java compiler; try to upgrade or downgrade your JDK.
+
+Stack trace:
+com.totalcross.TempertureContainer$1$$Lambda$1.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent 221
+totalcross.ui.effect.MaterialEffect.stop 216
+totalcross.ui.effect.MaterialEffect.timerTriggered 171
+totalcross.ui.Control.callEventListeners 2471
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.MainWindow._onTimerTick 575
+totalcross.ui.Window.pumpEvents
+totalcross.ui.Window.popup 1405
+totalcross.ui.Window.popup 1789
+com.totalcross.TempertureContainer.lambda$0 276
+com.totalcross.TempertureContainer$$Lambda$1.controlPressed 0
+totalcross.ui.Control.callEventListeners 2426
+totalcross.ui.Control._onEvent 2132
+totalcross.ui.Control.postEvent 1711
+totalcross.ui.Control.postPressedEvent 559
+totalcross.ui.Button.onEvent 726
+totalcross.ui.effect.MaterialEffect.postEvent
+total
+Aborting program.
+===============
