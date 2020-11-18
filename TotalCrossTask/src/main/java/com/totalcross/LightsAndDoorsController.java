@@ -7,7 +7,9 @@ import totalcross.ui.Button;
 import totalcross.ui.Container;
 import totalcross.ui.ImageControl;
 import totalcross.ui.Label;
+import totalcross.ui.Slider;
 import totalcross.ui.Switch;
+import totalcross.ui.Window;
 import totalcross.ui.event.Event;
 import totalcross.ui.event.EventHandler;
 import totalcross.ui.font.*;
@@ -53,6 +55,144 @@ public class LightsAndDoorsController{
         houseContainer.garageIcon.setForeColor(!garageValue? Color.getRGB(20,20,150):Color.YELLOW);
     }
 
+    public void PopupLightWindow(String WindowName, int LightCode){
+        Window lightWindow = new Window(){
+
+            Label name = new Label(WindowName);
+            Button Close =  new Button("");
+            Icon CloseIcon =  new Icon(MaterialIcons._CLEAR);
+
+
+            Button Detalhes = new Button("Detalhes");
+            Button Historico =  new Button("Historico");    
+    
+            Container historyContainer = new Container(){
+
+                @Override
+                public void initUI() {
+                    try{
+                        Image image = new Image("utils/lightBar.png");
+                        ImageControl imageControl = new ImageControl(image);
+                        add(imageControl,CENTER,CENTER);
+                    }catch(Exception ex){
+                    }
+                }
+
+            };
+            
+
+
+
+            @Override
+            protected void onPopup() {
+
+
+            Detalhes.setForeColor(Color.getRGB(20,20,200));
+            Historico.setForeColor(Color.getRGB(20,20,200));
+
+            
+            setBackColor(Color.WHITE);
+                setBorderStyle(BORDER_SIMPLE);
+                transparentBackground=true;
+                Close.transparentBackground=true;
+                name.setFont(name.getFont().adjustedBy(10));
+                add(new Container(){
+                    @Override
+                    public void initUI() {
+                        setBorderStyle(BORDER_ROUNDED);
+                        add(CloseIcon,LEFT+7,CENTER);
+                        add(Close,LEFT,TOP,40,FILL);
+                        add(name,AFTER+30,CENTER);
+                    }
+                },CENTER,CENTER-200,400,50);
+
+                add(new Container(){
+                    @Override
+                    public void initUI() {
+                        setBorderStyle(BORDER_ROUNDED);
+                        add(Detalhes,LEFT,TOP,200,FILL);
+                        add(Historico,RIGHT,TOP,200,FILL);
+
+                        
+                    }
+                },SAME,AFTER,400,50);
+
+
+                add(new Container(){
+                    Icon LightIcon ;
+                    int cor;
+                    Switch sw = new Switch();
+                    Slider slide = new Slider();
+
+
+                    @Override
+                    public void initUI() {
+                        setBorderStyle(BORDER_ROUNDED);
+                        slide.setForeColor(Color.getRGB(20,20,200));;
+                        switch (LightCode) {
+                            case 0:
+                                cor = lightsContainer.kitchenIcon.getForeColor();
+                                LightIcon = new Icon(MaterialIcons._LIGHTBULB_OUTLINE);
+                                sw.setOn(lightsContainer.kitchenSwitch.isOn());
+                                break;
+
+                            case 1:
+                                cor = lightsContainer.livingIcon.getForeColor();
+                                LightIcon = new Icon(MaterialIcons._LIGHTBULB_OUTLINE);
+                                sw.setOn(lightsContainer.livingSwitch.isOn());
+                                break;
+
+                            case 2:
+                                cor = lightsContainer.porchIcon.getForeColor();
+                                LightIcon = new Icon(MaterialIcons._FLASH_ON);
+                                sw.setOn(lightsContainer.porchSwitch.isOn());
+                                break;
+    
+                            case 3:
+                                cor = lightsContainer.garageIcon.getForeColor();
+                                LightIcon = new Icon(MaterialIcons._LIGHTBULB_OUTLINE);
+                                sw.setOn(lightsContainer.garageSwitch.isOn());
+                                break;
+                            
+                            default:
+                                break;
+                        }
+                        LightIcon.setForeColor(cor);
+                        add(LightIcon,LEFT+20,TOP+10);
+                        add(new Label(name.getText()),AFTER+30,TOP+15);
+                        add(sw,RIGHT-20,SAME);
+                        add(new Label("Brilho"),LEFT+20,AFTER+30);
+                        add(slide,CENTER,AFTER+20);
+                        add(new Icon(MaterialIcons._SETTINGS),LEFT+20,SAME-10);
+                        
+                    }
+          
+                        
+
+
+                        
+                    
+                
+
+                },SAME,AFTER,400,150);
+                
+                Historico.addPressListener(e ->{
+                    add(historyContainer,SAME,SAME,400,200);
+                });
+
+                Detalhes.addPressListener(e->{
+                    remove(historyContainer);
+                });
+
+
+                Close.addPressListener(e -> {
+                    unpop();
+                });;
+            }
+            
+            };
+            lightWindow.popup();
+    };
 
     public class LightsContainer extends Container{
         
@@ -211,6 +351,22 @@ public class LightsAndDoorsController{
                     }
 
                 }
+                if(e.target == kitchenButton){
+                    PopupLightWindow(kitchenLabel.getText(), 0);
+                }
+                if(e.target == livingButton){
+                    PopupLightWindow(livingLabel.getText(), 1);
+                    
+                }
+                if(e.target == porchButton){
+                    PopupLightWindow(porchLabel.getText(), 2);
+
+                }
+                if(e.target == garageButton){
+                    PopupLightWindow(garageLabel.getText(), 3);
+
+                }
+
 
                 AtualLights();                
                 

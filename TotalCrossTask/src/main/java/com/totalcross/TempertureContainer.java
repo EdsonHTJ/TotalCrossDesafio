@@ -7,6 +7,7 @@ package com.totalcross;
 import totalcross.ui.Button;
 import totalcross.ui.ComboBox;
 import totalcross.ui.Container;
+import totalcross.ui.ImageControl;
 import totalcross.ui.Label;
 import totalcross.ui.Slider;
 import totalcross.ui.Window;
@@ -15,6 +16,7 @@ import totalcross.ui.event.EventHandler;
 import totalcross.ui.font.Font;
 import totalcross.ui.gfx.Color;
 import totalcross.ui.icon.*;
+import totalcross.ui.image.Image;
 
 public class TempertureContainer extends Container{
     Icon AUTO = new Icon(MaterialIcons._EVENT);
@@ -102,6 +104,25 @@ public class TempertureContainer extends Container{
                     ComboBox PreBox = new ComboBox(Predefinir);
                     ComboBox VentBox = new ComboBox(Ventilacao);
 
+                    Button Detalhes = new Button("Detalhes");
+                    Button Historico = new Button("Historico");
+
+                    Container historyContainer = new Container(){
+
+                        @Override
+                        public void initUI() {
+                            try{
+                                Image image = new Image("utils/TempH.png");
+                                ImageControl imageControl = new ImageControl(image);
+                                add(imageControl,CENTER,CENTER);
+                            }catch(Exception ex){
+                            }
+                        }
+
+                    };
+
+                
+
                     
 
 
@@ -109,6 +130,9 @@ public class TempertureContainer extends Container{
                     @Override
                     protected void onPopup() {
                     setBackColor(Color.WHITE);
+                        Detalhes.setForeColor(Color.getRGB(20,20,200));
+                        Historico.setForeColor(Color.getRGB(20,20,200));
+
                         OpBox.setSelectedItem(mode1);
                         PreBox.setSelectedItem(mode2);
                         VentBox.setSelectedIndex(0);
@@ -123,9 +147,23 @@ public class TempertureContainer extends Container{
                                 add(CloseIcon,LEFT+7,CENTER);
                                 add(Close,LEFT,TOP,40,FILL);
                                 add(name,AFTER+30,CENTER);
+
                             }
                         },CENTER,CENTER-200,400,50);
-                    add(new Container(){
+
+                        add(new Container(){
+                            @Override
+                            public void initUI() {
+                                setBorderStyle(BORDER_ROUNDED);
+                                add(Detalhes,LEFT,TOP,200,FILL);
+                                add(Historico,RIGHT,TOP,200,FILL);
+
+                                
+                            }
+                        },SAME,AFTER,400,50);
+
+                        add(new Container(){
+
                             Label tempMinlabel = new Label((float)(tempMinSlider.getValue()/10)+"°C"); 
                             Label tempMaxlabel = new Label((float)(tempMaxSlider.getValue()/10)+"°C");
                             Button TempMinButtonup = new Button("+");
@@ -133,16 +171,18 @@ public class TempertureContainer extends Container{
 
                             Button TempMaxButtonup = new Button("+");
                             Button TempMaxButtondown = new Button("-");
+                            
 
 
                             @Override
                             public void initUI() {
+                                setBorderStyle(BORDER_ROUNDED);
                                 Font ft = Font.getFont(true, Font.NORMAL_SIZE+15);
                                 tempMinlabel.setFont(ft);
                                 tempMaxlabel.setFont(ft);
                                 add(new Label(modeLabel.getText()),CENTER,AFTER+5);
                                 add(new Label(RangeLabel.getText()),AFTER+5,SAME);
-                                add(new Label("Atualmente 22 °C"),RIGHT-20,AFTER);
+                                add(new Label("Atualmente 22 °C"),RIGHT-50,AFTER);
                                 add(new Label("Temperatura Desejada"),LEFT+5,AFTER+20);
                                 add(tempMinlabel,LEFT+10,AFTER+20);
                                 add(TempMinButtonup,AFTER+10,SAME,20,20);
@@ -162,8 +202,11 @@ public class TempertureContainer extends Container{
                                 
 
                                 TempMinButtonup.addPressListener(e -> {
-                                    tempMinSlider.setValue(tempMinSlider.getValue()+5);
-                                    tempMinlabel.setText((float)((float)tempMinSlider.getValue()/10)+"°C"); 
+
+                                    if(tempMinSlider.getValue()<tempMaxSlider.getValue()-5){
+                                        tempMinSlider.setValue(tempMinSlider.getValue()+5);
+                                        tempMinlabel.setText((float)((float)tempMinSlider.getValue()/10)+"°C"); 
+                                    }
                                 });
                                 TempMinButtondown.addPressListener(e -> {
                                     tempMinSlider.setValue(tempMinSlider.getValue()-5);
@@ -176,9 +219,10 @@ public class TempertureContainer extends Container{
 
                                 });
                                 TempMaxButtondown.addPressListener(e -> {
-                                    tempMaxSlider.setValue(tempMaxSlider.getValue()-5);
-                                    tempMaxlabel.setText((float)((float)tempMaxSlider.getValue()/10)+"°C"); 
-
+                                    if(tempMinSlider.getValue()<tempMaxSlider.getValue()-5){
+                                        tempMaxSlider.setValue(tempMaxSlider.getValue()-5);
+                                        tempMaxlabel.setText((float)((float)tempMaxSlider.getValue()/10)+"°C"); 
+                                    }
                                 });
                                 
 
@@ -187,9 +231,15 @@ public class TempertureContainer extends Container{
                             }
                         
 
-                        },SAME,AFTER,400,400);
+                        },SAME,AFTER,400,500);
                         
-                        
+                        Historico.addPressListener(e ->{
+                            add(historyContainer,SAME,SAME,400,500);
+                        });
+
+                        Detalhes.addPressListener(e->{
+                            remove(historyContainer);
+                        });
 
                         Close.addPressListener(e -> {
                             mode1= (String)OpBox.getValue();
